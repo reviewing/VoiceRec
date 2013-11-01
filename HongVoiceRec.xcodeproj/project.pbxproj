@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
+		18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80186182419D400A5CD65 /* CoreGraphics.framework */; };
+		18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
+		18B8018F182419D400A5CD65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18B8018D182419D400A5CD65 /* InfoPlist.strings */; };
+		18B80191182419D400A5CD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B80190182419D400A5CD65 /* main.m */; };
+		18B80195182419D400A5CD65 /* HVRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B80194182419D400A5CD65 /* HVRAppDelegate.m */; };
+		18B80198182419D400A5CD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B80196182419D400A5CD65 /* Main.storyboard */; };
+		18B8019B182419D400A5CD65 /* HVRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019A182419D400A5CD65 /* HVRFirstViewController.m */; };
+		18B8019E182419D400A5CD65 /* HVRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019D182419D400A5CD65 /* HVRSecondViewController.m */; };
+		18B801A0182419D400A5CD65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8019F182419D400A5CD65 /* Images.xcassets */; };
+		18B801A7182419D400A5CD65 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B801A6182419D400A5CD65 /* XCTest.framework */; };
+		18B801A8182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
+		18B801A9182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
+		18B801B1182419D400A5CD65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18B801AF182419D400A5CD65 /* InfoPlist.strings */; };
+		18B801B3182419D400A5CD65 /* HongVoiceRecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801B2182419D400A5CD65 /* HongVoiceRecTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B801AA182419D400A5CD65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B80179182419D400A5CD65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B80180182419D400A5CD65;
+			remoteInfo = HongVoiceRec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B80181182419D400A5CD65 /* HongVoiceRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongVoiceRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B80184182419D400A5CD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18B80186182419D400A5CD65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18B80188182419D400A5CD65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18B8018C182419D400A5CD65 /* HongVoiceRec-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HongVoiceRec-Info.plist"; sourceTree = "<group>"; };
+		18B8018E182419D400A5CD65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18B80190182419D400A5CD65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B80192182419D400A5CD65 /* HongVoiceRec-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HongVoiceRec-Prefix.pch"; sourceTree = "<group>"; };
+		18B80193182419D400A5CD65 /* HVRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRAppDelegate.h; sourceTree = "<group>"; };
+		18B80194182419D400A5CD65 /* HVRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRAppDelegate.m; sourceTree = "<group>"; };
+		18B80197182419D400A5CD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B80199182419D400A5CD65 /* HVRFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRFirstViewController.h; sourceTree = "<group>"; };
+		18B8019A182419D400A5CD65 /* HVRFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRFirstViewController.m; sourceTree = "<group>"; };
+		18B8019C182419D400A5CD65 /* HVRSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRSecondViewController.h; sourceTree = "<group>"; };
+		18B8019D182419D400A5CD65 /* HVRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRSecondViewController.m; sourceTree = "<group>"; };
+		18B8019F182419D400A5CD65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18B801A5182419D400A5CD65 /* HongVoiceRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HongVoiceRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B801A6182419D400A5CD65 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18B801AE182419D400A5CD65 /* HongVoiceRecTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HongVoiceRecTests-Info.plist"; sourceTree = "<group>"; };
+		18B801B0182419D400A5CD65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18B801B2182419D400A5CD65 /* HongVoiceRecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HongVoiceRecTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B8017E182419D400A5CD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */,
+				18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */,
+				18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B801A2182419D400A5CD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B801A7182419D400A5CD65 /* XCTest.framework in Frameworks */,
+				18B801A9182419D400A5CD65 /* UIKit.framework in Frameworks */,
+				18B801A8182419D400A5CD65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B80178182419D400A5CD65 = {
+			isa = PBXGroup;
+			children = (
+				18B8018A182419D400A5CD65 /* HongVoiceRec */,
+				18B801AC182419D400A5CD65 /* HongVoiceRecTests */,
+				18B80183182419D400A5CD65 /* Frameworks */,
+				18B80182182419D400A5CD65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B80182182419D400A5CD65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B80181182419D400A5CD65 /* HongVoiceRec.app */,
+				18B801A5182419D400A5CD65 /* HongVoiceRecTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B80183182419D400A5CD65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18B80184182419D400A5CD65 /* Foundation.framework */,
+				18B80186182419D400A5CD65 /* CoreGraphics.framework */,
+				18B80188182419D400A5CD65 /* UIKit.framework */,
+				18B801A6182419D400A5CD65 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18B8018A182419D400A5CD65 /* HongVoiceRec */ = {
+			isa = PBXGroup;
+			children = (
+				18B80193182419D400A5CD65 /* HVRAppDelegate.h */,
+				18B80194182419D400A5CD65 /* HVRAppDelegate.m */,
+				18B80196182419D400A5CD65 /* Main.storyboard */,
+				18B80199182419D400A5CD65 /* HVRFirstViewController.h */,
+				18B8019A182419D400A5CD65 /* HVRFirstViewController.m */,
+				18B8019C182419D400A5CD65 /* HVRSecondViewController.h */,
+				18B8019D182419D400A5CD65 /* HVRSecondViewController.m */,
+				18B8019F182419D400A5CD65 /* Images.xcassets */,
+				18B8018B182419D400A5CD65 /* Supporting Files */,
+			);
+			path = HongVoiceRec;
+			sourceTree = "<group>";
+		};
+		18B8018B182419D400A5CD65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B8018C182419D400A5CD65 /* HongVoiceRec-Info.plist */,
+				18B8018D182419D400A5CD65 /* InfoPlist.strings */,
+				18B80190182419D400A5CD65 /* main.m */,
+				18B80192182419D400A5CD65 /* HongVoiceRec-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B801AC182419D400A5CD65 /* HongVoiceRecTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B801B2182419D400A5CD65 /* HongVoiceRecTests.m */,
+				18B801AD182419D400A5CD65 /* Supporting Files */,
+			);
+			path = HongVoiceRecTests;
+			sourceTree = "<group>";
+		};
+		18B801AD182419D400A5CD65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B801AE182419D400A5CD65 /* HongVoiceRecTests-Info.plist */,
+				18B801AF182419D400A5CD65 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B80180182419D400A5CD65 /* HongVoiceRec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B801B6182419D400A5CD65 /* Build configuration list for PBXNativeTarget "HongVoiceRec" */;
+			buildPhases = (
+				18B8017D182419D400A5CD65 /* Sources */,
+				18B8017E182419D400A5CD65 /* Frameworks */,
+				18B8017F182419D400A5CD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HongVoiceRec;
+			productName = HongVoiceRec;
+			productReference = 18B80181182419D400A5CD65 /* HongVoiceRec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B801A4182419D400A5CD65 /* HongVoiceRecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B801B9182419D400A5CD65 /* Build configuration list for PBXNativeTarget "HongVoiceRecTests" */;
+			buildPhases = (
+				18B801A1182419D400A5CD65 /* Sources */,
+				18B801A2182419D400A5CD65 /* Frameworks */,
+				18B801A3182419D400A5CD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B801AB182419D400A5CD65 /* PBXTargetDependency */,
+			);
+			name = HongVoiceRecTests;
+			productName = HongVoiceRecTests;
+			productReference = 18B801A5182419D400A5CD65 /* HongVoiceRecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B80179182419D400A5CD65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HVR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "百度";
+				TargetAttributes = {
+					18B801A4182419D400A5CD65 = {
+						TestTargetID = 18B80180182419D400A5CD65;
+					};
+				};
+			};
+			buildConfigurationList = 18B8017C182419D400A5CD65 /* Build configuration list for PBXProject "HongVoiceRec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B80178182419D400A5CD65;
+			productRefGroup = 18B80182182419D400A5CD65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B80180182419D400A5CD65 /* HongVoiceRec */,
+				18B801A4182419D400A5CD65 /* HongVoiceRecTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B8017F182419D400A5CD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B801A0182419D400A5CD65 /* Images.xcassets in Resources */,
+				18B8018F182419D400A5CD65 /* InfoPlist.strings in Resources */,
+				18B80198182419D400A5CD65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B801A3182419D400A5CD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B801B1182419D400A5CD65 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B8017D182419D400A5CD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B8019B182419D400A5CD65 /* HVRFirstViewController.m in Sources */,
+				18B80191182419D400A5CD65 /* main.m in Sources */,
+				18B80195182419D400A5CD65 /* HVRAppDelegate.m in Sources */,
+				18B8019E182419D400A5CD65 /* HVRSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B801A1182419D400A5CD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B801B3182419D400A5CD65 /* HongVoiceRecTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B801AB182419D400A5CD65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B80180182419D400A5CD65 /* HongVoiceRec */;
+			targetProxy = 18B801AA182419D400A5CD65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B8018D182419D400A5CD65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B8018E182419D400A5CD65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18B80196182419D400A5CD65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B80197182419D400A5CD65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B801AF182419D400A5CD65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B801B0182419D400A5CD65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B801B4182419D400A5CD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18B801B5182419D400A5CD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B801B7182419D400A5CD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HongVoiceRec/HongVoiceRec-Prefix.pch";
+				INFOPLIST_FILE = "HongVoiceRec/HongVoiceRec-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18B801B8182419D400A5CD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HongVoiceRec/HongVoiceRec-Prefix.pch";
+				INFOPLIST_FILE = "HongVoiceRec/HongVoiceRec-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18B801BA182419D400A5CD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HongVoiceRec.app/HongVoiceRec";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HongVoiceRec/HongVoiceRec-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HongVoiceRecTests/HongVoiceRecTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18B801BB182419D400A5CD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HongVoiceRec.app/HongVoiceRec";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HongVoiceRec/HongVoiceRec-Prefix.pch";
+				INFOPLIST_FILE = "HongVoiceRecTests/HongVoiceRecTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B8017C182419D400A5CD65 /* Build configuration list for PBXProject "HongVoiceRec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B801B4182419D400A5CD65 /* Debug */,
+				18B801B5182419D400A5CD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B801B6182419D400A5CD65 /* Build configuration list for PBXNativeTarget "HongVoiceRec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B801B7182419D400A5CD65 /* Debug */,
+				18B801B8182419D400A5CD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18B801B9182419D400A5CD65 /* Build configuration list for PBXNativeTarget "HongVoiceRecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B801BA182419D400A5CD65 /* Debug */,
+				18B801BB182419D400A5CD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B80179182419D400A5CD65 /* Project object */;
+}
