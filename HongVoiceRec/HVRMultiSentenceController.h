@@ -1,5 +1,5 @@
 //
-//  HVRSecondViewController.h
+//  HVRMultiSentenceController.h
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVRSecondViewController : UIViewController
+@interface HVRMultiSentenceController : UIViewController
 
 @end

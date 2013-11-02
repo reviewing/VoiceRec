@@ -14,8 +14,8 @@
 		18B80191182419D400A5CD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B80190182419D400A5CD65 /* main.m */; };
 		18B80195182419D400A5CD65 /* HVRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B80194182419D400A5CD65 /* HVRAppDelegate.m */; };
 		18B80198182419D400A5CD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B80196182419D400A5CD65 /* Main.storyboard */; };
-		18B8019B182419D400A5CD65 /* HVRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019A182419D400A5CD65 /* HVRFirstViewController.m */; };
-		18B8019E182419D400A5CD65 /* HVRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019D182419D400A5CD65 /* HVRSecondViewController.m */; };
+		18B8019B182419D400A5CD65 /* HVRSingleSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019A182419D400A5CD65 /* HVRSingleSentenceController.m */; };
+		18B8019E182419D400A5CD65 /* HVRMultiSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019D182419D400A5CD65 /* HVRMultiSentenceController.m */; };
 		18B801A0182419D400A5CD65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8019F182419D400A5CD65 /* Images.xcassets */; };
 		18B801A7182419D400A5CD65 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B801A6182419D400A5CD65 /* XCTest.framework */; };
 		18B801A8182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
@@ -73,10 +73,10 @@
 		18B80193182419D400A5CD65 /* HVRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRAppDelegate.h; sourceTree = "<group>"; };
 		18B80194182419D400A5CD65 /* HVRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRAppDelegate.m; sourceTree = "<group>"; };
 		18B80197182419D400A5CD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18B80199182419D400A5CD65 /* HVRFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRFirstViewController.h; sourceTree = "<group>"; };
-		18B8019A182419D400A5CD65 /* HVRFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRFirstViewController.m; sourceTree = "<group>"; };
-		18B8019C182419D400A5CD65 /* HVRSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRSecondViewController.h; sourceTree = "<group>"; };
-		18B8019D182419D400A5CD65 /* HVRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRSecondViewController.m; sourceTree = "<group>"; };
+		18B80199182419D400A5CD65 /* HVRSingleSentenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRSingleSentenceController.h; sourceTree = "<group>"; };
+		18B8019A182419D400A5CD65 /* HVRSingleSentenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRSingleSentenceController.m; sourceTree = "<group>"; };
+		18B8019C182419D400A5CD65 /* HVRMultiSentenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRMultiSentenceController.h; sourceTree = "<group>"; };
+		18B8019D182419D400A5CD65 /* HVRMultiSentenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRMultiSentenceController.m; sourceTree = "<group>"; };
 		18B8019F182419D400A5CD65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18B801A5182419D400A5CD65 /* HongVoiceRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HongVoiceRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B801A6182419D400A5CD65 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -224,10 +224,10 @@
 				18B80193182419D400A5CD65 /* HVRAppDelegate.h */,
 				18B80194182419D400A5CD65 /* HVRAppDelegate.m */,
 				18B80196182419D400A5CD65 /* Main.storyboard */,
-				18B80199182419D400A5CD65 /* HVRFirstViewController.h */,
-				18B8019A182419D400A5CD65 /* HVRFirstViewController.m */,
-				18B8019C182419D400A5CD65 /* HVRSecondViewController.h */,
-				18B8019D182419D400A5CD65 /* HVRSecondViewController.m */,
+				18B80199182419D400A5CD65 /* HVRSingleSentenceController.h */,
+				18B8019A182419D400A5CD65 /* HVRSingleSentenceController.m */,
+				18B8019C182419D400A5CD65 /* HVRMultiSentenceController.h */,
+				18B8019D182419D400A5CD65 /* HVRMultiSentenceController.m */,
 				18B8019F182419D400A5CD65 /* Images.xcassets */,
 				18B8018B182419D400A5CD65 /* Supporting Files */,
 			);
@@ -464,7 +464,7 @@
 			files = (
 				18B801FA182510CF00A5CD65 /* Reachability.m in Sources */,
 				18B801F3182510CF00A5CD65 /* ASIDataCompressor.m in Sources */,
-				18B8019B182419D400A5CD65 /* HVRFirstViewController.m in Sources */,
+				18B8019B182419D400A5CD65 /* HVRSingleSentenceController.m in Sources */,
 				18B80191182419D400A5CD65 /* main.m in Sources */,
 				18B801FE182510CF00A5CD65 /* JSONKit.m in Sources */,
 				18B801F2182510CF00A5CD65 /* ASIAuthenticationDialog.m in Sources */,
@@ -477,7 +477,7 @@
 				18B801F5182510CF00A5CD65 /* ASIDownloadCache.m in Sources */,
 				18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */,
 				18B801FB182510CF00A5CD65 /* CADebugMacros.cpp in Sources */,
-				18B8019E182419D400A5CD65 /* HVRSecondViewController.m in Sources */,
+				18B8019E182419D400A5CD65 /* HVRMultiSentenceController.m in Sources */,
 				18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */,
 				18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */,
 			);

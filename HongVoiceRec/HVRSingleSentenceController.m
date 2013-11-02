@@ -1,23 +1,23 @@
 //
-//  HVRFirstViewController.m
+//  HVRSingleSentenceController.m
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-2.
 //  Copyright (c) 2013年 百度. All rights reserved.
 //
 
-#import "HVRFirstViewController.h"
+#import "HVRSingleSentenceController.h"
 #import "BDRecognizerViewController.h"
 #import "BDTheme.h"
 
 #define API_KEY @"LjfQaGXUdnHHGZFBReQBtVGs"
 #define SECRET_KEY @"awDw9VbFAAbFFKWDhcthn7MrZv44FQI0"
 
-@interface HVRFirstViewController ()
+@interface HVRSingleSentenceController ()
 @property (nonatomic, retain) BDRecognizerViewController *recognizerViewController;
 @end
 
-@implementation HVRFirstViewController
+@implementation HVRSingleSentenceController
 
 - (void)viewDidLoad
 {

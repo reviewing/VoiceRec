@@ -1,18 +1,18 @@
 //
-//  HVRSecondViewController.m
+//  HVRMultiSentenceController.m
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-2.
 //  Copyright (c) 2013年 百度. All rights reserved.
 //
 
-#import "HVRSecondViewController.h"
+#import "HVRMultiSentenceController.h"
 
-@interface HVRSecondViewController ()
+@interface HVRMultiSentenceController ()
 
 @end
 
-@implementation HVRSecondViewController
+@implementation HVRMultiSentenceController
 
 - (void)viewDidLoad
 {

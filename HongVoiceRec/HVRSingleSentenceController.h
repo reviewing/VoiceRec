@@ -1,5 +1,5 @@
 //
-//  HVRFirstViewController.h
+//  HVRSingleSentenceController.h
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-2.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BDRecognizerViewDelegate.h"
 
-@interface HVRFirstViewController : UIViewController<BDRecognizerViewDelegate>
+@interface HVRSingleSentenceController : UIViewController<BDRecognizerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *resultLabel;
 
