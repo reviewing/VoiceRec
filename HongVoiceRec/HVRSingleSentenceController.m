@@ -39,7 +39,12 @@
 - (void)setText:(NSString *)text
 {
     self.resultLabel.text = text;
-//    [self.resultLabel sizeToFit];
+    [self.resultLabel sizeToFit];
+    
+    // Resize the frame's width to 280 (320 - margins) see: http://stackoverflow.com/questions/1054558/vertically-align-text-within-a-uilabel
+    CGRect myFrame = self.resultLabel.frame;
+    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 280, myFrame.size.height);
+    self.resultLabel.frame = myFrame;
 }
 
 - (IBAction)tabToSpeak:(id)sender {
