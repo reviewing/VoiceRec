@@ -25,3 +25,6 @@
 
 /* Class = "IBUIButton"; normalTitle = "Speak"; ObjectID = "Nw0-Wl-8Bb"; */
 "Nw0-Wl-8Bb.normalTitle" = "说话";
+
+/* Class = "IBUIButton"; normalTitle = "Speak"; ObjectID = "BSU-FT-Hxd"; */
+"BSU-FT-Hxd.normalTitle" = "说话";
