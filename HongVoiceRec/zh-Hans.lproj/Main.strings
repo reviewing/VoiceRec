@@ -1,0 +1,24 @@
+
+/* Class = "IBUIViewController"; title = "First"; ObjectID = "CZ4-MO-1fc"; */
+"CZ4-MO-1fc.title" = "单句";
+
+/* Class = "IBUILabel"; text = "Multi Sentence"; ObjectID = "N4l-y9-U5C"; */
+"N4l-y9-U5C.text" = "多句";
+
+/* Class = "IBUIViewController"; title = "Second"; ObjectID = "QUy-BD-bpt"; */
+"QUy-BD-bpt.title" = "多句";
+
+/* Class = "IBUITextView"; text = "result"; ObjectID = "RM4-F1-7Vx"; */
+"RM4-F1-7Vx.text" = "识别结果";
+
+/* Class = "IBUITabBarItem"; title = "multi sentences"; ObjectID = "Z7h-1E-pvt"; */
+"Z7h-1E-pvt.title" = "多句";
+
+/* Class = "IBUILabel"; text = "Single Sentence"; ObjectID = "hCi-oq-yvo"; */
+"hCi-oq-yvo.text" = "单句";
+
+/* Class = "IBUITextView"; text = "result"; ObjectID = "mE3-dJ-WBm"; */
+"mE3-dJ-WBm.text" = "识别结果";
+
+/* Class = "IBUITabBarItem"; title = "single sentence"; ObjectID = "u1e-5L-l1D"; */
+"u1e-5L-l1D.title" = "单句";

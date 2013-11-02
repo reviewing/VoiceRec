@@ -56,6 +56,9 @@
 		18B801AE182419D400A5CD65 /* HongVoiceRecTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HongVoiceRecTests-Info.plist"; sourceTree = "<group>"; };
 		18B801B0182419D400A5CD65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18B801B2182419D400A5CD65 /* HongVoiceRecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HongVoiceRecTests.m; sourceTree = "<group>"; };
+		18B801BD18241C7900A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		18B801BE18241C7900A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		18B801C01824E04A00A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 18B80178182419D400A5CD65;
 			productRefGroup = 18B80182182419D400A5CD65 /* Products */;
@@ -285,6 +289,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18B8018E182419D400A5CD65 /* en */,
+				18B801BD18241C7900A5CD65 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18B80197182419D400A5CD65 /* Base */,
+				18B801C01824E04A00A5CD65 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18B801B0182419D400A5CD65 /* en */,
+				18B801BE18241C7900A5CD65 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -467,6 +474,7 @@
 				18B801B8182419D400A5CD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B801B9182419D400A5CD65 /* Build configuration list for PBXNativeTarget "HongVoiceRecTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +483,7 @@
 				18B801BB182419D400A5CD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
