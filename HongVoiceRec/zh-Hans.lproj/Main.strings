@@ -22,3 +22,6 @@
 
 /* Class = "IBUITabBarItem"; title = "single sentence"; ObjectID = "u1e-5L-l1D"; */
 "u1e-5L-l1D.title" = "单句";
+
+/* Class = "IBUIButton"; normalTitle = "Speak"; ObjectID = "Nw0-Wl-8Bb"; */
+"Nw0-Wl-8Bb.normalTitle" = "说话";

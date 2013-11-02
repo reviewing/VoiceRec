@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BDRecognizerViewDelegate.h"
 
-@interface HVRFirstViewController : UIViewController
+@interface HVRFirstViewController : UIViewController<BDRecognizerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *resultLabel;
+
+- (IBAction)tabToSpeak:(id)sender;
 
 @end
