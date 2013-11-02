@@ -22,23 +22,21 @@
 		18B801A9182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
 		18B801B1182419D400A5CD65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18B801AF182419D400A5CD65 /* InfoPlist.strings */; };
 		18B801B3182419D400A5CD65 /* HongVoiceRecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801B2182419D400A5CD65 /* HongVoiceRecTests.m */; };
-		18B801C418250FD600A5CD65 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 18B801C318250FD600A5CD65 /* BDVoiceRecognitionClientResources */; };
-		18B801F2182510CF00A5CD65 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801CF182510CF00A5CD65 /* ASIAuthenticationDialog.m */; };
-		18B801F3182510CF00A5CD65 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D2182510CF00A5CD65 /* ASIDataCompressor.m */; };
-		18B801F4182510CF00A5CD65 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D4182510CF00A5CD65 /* ASIDataDecompressor.m */; };
-		18B801F5182510CF00A5CD65 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D6182510CF00A5CD65 /* ASIDownloadCache.m */; };
-		18B801F6182510CF00A5CD65 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D8182510CF00A5CD65 /* ASIFormDataRequest.m */; };
-		18B801F7182510CF00A5CD65 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801DA182510CF00A5CD65 /* ASIHTTPRequest.m */; };
-		18B801F8182510CF00A5CD65 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801DE182510CF00A5CD65 /* ASIInputStream.m */; };
-		18B801F9182510CF00A5CD65 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E0182510CF00A5CD65 /* ASINetworkQueue.m */; };
-		18B801FA182510CF00A5CD65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E3182510CF00A5CD65 /* Reachability.m */; };
+		18B801F2182510CF00A5CD65 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801CF182510CF00A5CD65 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F3182510CF00A5CD65 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D2182510CF00A5CD65 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F4182510CF00A5CD65 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D4182510CF00A5CD65 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F5182510CF00A5CD65 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D6182510CF00A5CD65 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F6182510CF00A5CD65 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801D8182510CF00A5CD65 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F7182510CF00A5CD65 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801DA182510CF00A5CD65 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F8182510CF00A5CD65 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801DE182510CF00A5CD65 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801F9182510CF00A5CD65 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E0182510CF00A5CD65 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B801FA182510CF00A5CD65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E3182510CF00A5CD65 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18B801FB182510CF00A5CD65 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E5182510CF00A5CD65 /* CADebugMacros.cpp */; };
 		18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E8182510CF00A5CD65 /* CAStreamBasicDescription.cpp */; };
 		18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EA182510CF00A5CD65 /* CAXException.cpp */; };
-		18B801FE182510CF00A5CD65 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EE182510CF00A5CD65 /* JSONKit.m */; };
+		18B801FE182510CF00A5CD65 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EE182510CF00A5CD65 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801F1182510CF00A5CD65 /* TTTAttributedLabel.m */; };
 		18B80207182510FD00A5CD65 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80206182510FD00A5CD65 /* libBDVoiceRecognitionClient.a */; };
-		18B802081825115F00A5CD65 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B801A6182419D400A5CD65 /* XCTest.framework */; };
 		18B8020A1825119900A5CD65 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802091825119900A5CD65 /* GLKit.framework */; };
 		18B8020C182511A100A5CD65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8020B182511A100A5CD65 /* QuartzCore.framework */; };
 		18B8020E182511B700A5CD65 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8020D182511B700A5CD65 /* OpenGLES.framework */; };
@@ -49,6 +47,8 @@
 		18B802181825128500A5CD65 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802171825128500A5CD65 /* Security.framework */; };
 		18B8021A1825128D00A5CD65 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802191825128D00A5CD65 /* AudioToolbox.framework */; };
 		18B8021C1825129600A5CD65 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8021B1825129600A5CD65 /* CFNetwork.framework */; };
+		18B8021E182513D300A5CD65 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 18B8021D182513D300A5CD65 /* BDVoiceRecognitionClientResources */; };
+		18B8022018251EE100A5CD65 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8021F18251EE100A5CD65 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,6 @@
 		18B801BD18241C7900A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		18B801BE18241C7900A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		18B801C01824E04A00A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		18B801C318250FD600A5CD65 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BDVoiceRecognitionClientResources; path = HongVoiceRec/Libs/BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
 		18B801CE182510CF00A5CD65 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		18B801CF182510CF00A5CD65 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		18B801D0182510CF00A5CD65 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +135,8 @@
 		18B802171825128500A5CD65 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		18B802191825128D00A5CD65 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18B8021B1825129600A5CD65 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18B8021D182513D300A5CD65 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BDVoiceRecognitionClientResources; path = HongVoiceRec/Resources/BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
+		18B8021F18251EE100A5CD65 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B8022018251EE100A5CD65 /* AVFoundation.framework in Frameworks */,
 				18B8021C1825129600A5CD65 /* CFNetwork.framework in Frameworks */,
 				18B8021A1825128D00A5CD65 /* AudioToolbox.framework in Frameworks */,
 				18B802181825128500A5CD65 /* Security.framework in Frameworks */,
@@ -157,7 +159,6 @@
 				18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */,
 				18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */,
 				18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */,
-				18B802081825115F00A5CD65 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +198,7 @@
 		18B80183182419D400A5CD65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18B8021F18251EE100A5CD65 /* AVFoundation.framework */,
 				18B8021B1825129600A5CD65 /* CFNetwork.framework */,
 				18B802191825128D00A5CD65 /* AudioToolbox.framework */,
 				18B802171825128500A5CD65 /* Security.framework */,
@@ -276,7 +278,7 @@
 		18B801C218250F8100A5CD65 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				18B801C318250FD600A5CD65 /* BDVoiceRecognitionClientResources */,
+				18B8021D182513D300A5CD65 /* BDVoiceRecognitionClientResources */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -438,7 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B801C418250FD600A5CD65 /* BDVoiceRecognitionClientResources in Resources */,
+				18B8021E182513D300A5CD65 /* BDVoiceRecognitionClientResources in Resources */,
 				18B801A0182419D400A5CD65 /* Images.xcassets in Resources */,
 				18B8018F182419D400A5CD65 /* InfoPlist.strings in Resources */,
 				18B80198182419D400A5CD65 /* Main.storyboard in Resources */,
@@ -541,7 +543,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -580,7 +582,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
