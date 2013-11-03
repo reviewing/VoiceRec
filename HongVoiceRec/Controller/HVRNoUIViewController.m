@@ -21,7 +21,7 @@
     NSTimer *volumeUpdateTimer;
 }
 
-@property (strong, nonatomic) IBOutlet UILabel *resultLabel;
+@property (strong, nonatomic) IBOutlet UITextView *resultTextView;
 @property (strong, nonatomic) IBOutlet UIButton *speakButton;
 @property (strong, nonatomic) IBOutlet UIButton *cancelRecButton;
 @property (strong, nonatomic) IBOutlet UIProgressView *volumeBar;
@@ -69,7 +69,7 @@
 
 - (void)setResultText:(NSString *)text
 {
-    self.resultLabel.text = text;
+    self.resultTextView.text = text;
 }
 
 - (IBAction)tapToSpeak:(id)sender {
