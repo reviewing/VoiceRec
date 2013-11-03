@@ -121,6 +121,15 @@
 - (void)VoiceRecognitionClientWorkStatus:(int) aStatus obj:(id)aObj
 {
     switch (aStatus) {
+        case EVoiceRecognitionClientWorkStatusFlushData:
+        {
+            NSString *text = [aObj objectAtIndex:0];
+            if ([text length] > 0)
+            {
+                [self setResultText:text];
+            }
+            break;
+        }
         case EVoiceRecognitionClientWorkStatusFinish:
         {
             [self speakEnded];
@@ -147,8 +156,7 @@
         }
         case EVoiceRecognitionClientWorkStatusEnd:
         {
-            [self setResultText:@"识别中，请稍候..."];
-            [self stopVolumeUpdate];
+            [self speakEnded];
             break;
         }
         case EVoiceRecognitionClientWorkStatusCancel:
