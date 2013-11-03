@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--Single Sentence NoUI View Controller - No built-in UI-->
+        <!--NoUI View Controller - No built-in UI-->
         <scene sceneID="Mre-ZB-Jdq">
             <objects>
-                <viewController id="HW1-FD-Bdw" customClass="HVRSingleSentenceNoUIViewController" sceneMemberID="viewController">
+                <viewController id="HW1-FD-Bdw" customClass="HVRNoUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yiX-zk-8eS"/>
                         <viewControllerLayoutGuide type="bottom" id="yU4-JG-UEr"/>

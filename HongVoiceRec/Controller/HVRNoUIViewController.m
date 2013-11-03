@@ -1,19 +1,19 @@
 //
-//  HVRSingleSentenceNoUIViewController.m
+//  HVRNoUIViewController.m
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-3.
 //  Copyright (c) 2013年 百度. All rights reserved.
 //
 
-#import "HVRSingleSentenceNoUIViewController.h"
+#import "HVRNoUIViewController.h"
 
 #define API_KEY @"LjfQaGXUdnHHGZFBReQBtVGs"
 #define SECRET_KEY @"awDw9VbFAAbFFKWDhcthn7MrZv44FQI0"
 
 #define VOLUME_UPDATE_INTERVAL 0.1
 
-@interface HVRSingleSentenceNoUIViewController ()
+@interface HVRNoUIViewController ()
 {
     BOOL isSpeaking;
     int voiceRecMode;
@@ -32,7 +32,7 @@
 
 @end
 
-@implementation HVRSingleSentenceNoUIViewController
+@implementation HVRNoUIViewController
 
 - (void)viewDidLoad
 {
