@@ -155,9 +155,34 @@
                                 <rect key="frame" x="20" y="394" width="280" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cej-70-nOb">
+                                <rect key="frame" x="136" y="429" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchMode:" destination="HW1-FD-Bdw" eventType="valueChanged" id="vfY-6X-KRY"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB4-R6-nmC">
+                                <rect key="frame" x="90" y="434" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2m-iF-afu">
+                                <rect key="frame" x="193" y="434" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="M2m-iF-afu" firstAttribute="leading" secondItem="cej-70-nOb" secondAttribute="trailing" constant="8" id="Gqc-F6-ITe"/>
+                            <constraint firstItem="M2m-iF-afu" firstAttribute="centerY" secondItem="wB4-R6-nmC" secondAttribute="centerY" id="ITn-0b-E0o"/>
+                            <constraint firstAttribute="bottom" secondItem="cej-70-nOb" secondAttribute="bottom" constant="108" id="Ods-wG-teV"/>
+                            <constraint firstItem="cej-70-nOb" firstAttribute="leading" secondItem="wB4-R6-nmC" secondAttribute="trailing" constant="8" id="QrH-8q-AGV"/>
+                            <constraint firstAttribute="centerX" secondItem="cej-70-nOb" secondAttribute="centerX" id="mBh-d9-aog"/>
+                            <constraint firstItem="M2m-iF-afu" firstAttribute="centerY" secondItem="cej-70-nOb" secondAttribute="centerY" id="shf-H6-Wyu"/>
                             <constraint firstAttribute="centerX" secondItem="sDn-Kl-EOa" secondAttribute="centerX" id="vZ7-nV-hxe"/>
                             <constraint firstAttribute="bottom" secondItem="sDn-Kl-EOa" secondAttribute="bottom" constant="70" id="xY3-Nx-WHO"/>
                         </constraints>

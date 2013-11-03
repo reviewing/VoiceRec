@@ -16,6 +16,7 @@
 @interface HVRSingleSentenceNoUIViewController ()
 {
     BOOL isSpeaking;
+    int voiceRecMode;
     NSTimer *volumeUpdateTimer;
 }
 
@@ -26,6 +27,7 @@
 
 - (IBAction)tapToSpeak:(id)sender;
 - (IBAction)cancelRec:(id)sender;
+- (IBAction)switchMode:(UISwitch *)sender;
 
 @end
 
@@ -35,6 +37,7 @@
 {
     [super viewDidLoad];
     isSpeaking = NO;
+    voiceRecMode = EVoiceRecognitionModeSearch;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -67,6 +70,11 @@
     self.resultLabel.text = text;
 }
 
+- (void)appendResultText:(NSString *)text
+{
+    self.resultLabel.text = [self.resultLabel.text stringByAppendingString:text];
+}
+
 - (IBAction)tapToSpeak:(id)sender {
     if (isSpeaking) {
         [[BDVoiceRecognitionClient sharedInstance] speakFinish];
@@ -76,8 +84,8 @@
         // 设置开发者信息
         [[BDVoiceRecognitionClient sharedInstance] setApiKey:API_KEY withSecretKey:SECRET_KEY];
         
-        // 设置语音识别模式，默认是搜索模式, 请在设置服务器地址之前进行设置，避免服务器地址设置出错
-        [[BDVoiceRecognitionClient sharedInstance] setCurrentVoiceRecognitionMode:EVoiceRecognitionModeSearch];
+        // 设置识别模式
+        [[BDVoiceRecognitionClient sharedInstance] setCurrentVoiceRecognitionMode:voiceRecMode];
         
         // 开始监听音量
         [[BDVoiceRecognitionClient sharedInstance] listenCurrentDBLevelMeter];
@@ -118,6 +126,16 @@
     [self speakEnded];
 }
 
+- (IBAction)switchMode:(UISwitch *)sender {
+    if (sender.on) {
+        voiceRecMode = EVoiceRecognitionModeSearch;
+    }
+    else
+    {
+        voiceRecMode = EVoiceRecognitionModeInput;
+    }
+}
+
 - (void)VoiceRecognitionClientWorkStatus:(int) aStatus obj:(id)aObj
 {
     switch (aStatus) {
@@ -130,23 +148,37 @@
             }
             break;
         }
+        case EVoiceRecognitionClientWorkStatusReceiveData:
+        {
+            NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
+            for (NSArray *result in aObj)
+            {
+                NSDictionary *dic = [result objectAtIndex:0];
+                NSString *candidateWord = [[dic allKeys] objectAtIndex:0];
+                [tmpString appendString:candidateWord];
+            }
+            [self appendResultText:tmpString];
+            
+            break;
+        }
         case EVoiceRecognitionClientWorkStatusFinish:
         {
             [self speakEnded];
             
-            self.resultLabel.text = nil;
-            
-            // 搜索模式下的结果为数组，示例为
-            // ["公园", "公元"]
-            NSMutableArray *audioResultData = (NSMutableArray *)aObj;
-            NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
-            
-            for (int i=0; i < [audioResultData count]; i++)
-            {
-                [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+            if (voiceRecMode == EVoiceRecognitionModeSearch) {
+                // 搜索模式下的结果为数组，示例为
+                // ["公园", "公元"]
+                NSMutableArray *audioResultData = (NSMutableArray *)aObj;
+                NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
+                
+                for (int i=0; i < [audioResultData count]; i++)
+                {
+                    [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+                }
+                
+                [self setResultText:tmpString];
             }
             
-            [self setResultText:tmpString];
             break;
         }
         case EVoiceRecognitionClientWorkStatusStartWorkIng:
