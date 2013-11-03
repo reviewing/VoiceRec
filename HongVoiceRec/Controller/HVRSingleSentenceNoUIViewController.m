@@ -17,6 +17,7 @@
 {
     BOOL isSpeaking;
     int voiceRecMode;
+    NSString *finalResult;
     NSTimer *volumeUpdateTimer;
 }
 
@@ -38,6 +39,7 @@
     [super viewDidLoad];
     isSpeaking = NO;
     voiceRecMode = EVoiceRecognitionModeSearch;
+    finalResult = @"";
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -70,17 +72,15 @@
     self.resultLabel.text = text;
 }
 
-- (void)appendResultText:(NSString *)text
-{
-    self.resultLabel.text = [self.resultLabel.text stringByAppendingString:text];
-}
-
 - (IBAction)tapToSpeak:(id)sender {
     if (isSpeaking) {
         [[BDVoiceRecognitionClient sharedInstance] speakFinish];
         [self speakEnded];
     }
     else {
+        // 清空之前结果
+        finalResult = @"";
+        
         // 设置开发者信息
         [[BDVoiceRecognitionClient sharedInstance] setApiKey:API_KEY withSecretKey:SECRET_KEY];
         
@@ -141,10 +141,10 @@
     switch (aStatus) {
         case EVoiceRecognitionClientWorkStatusFlushData:
         {
-            NSString *text = [aObj objectAtIndex:0];
-            if ([text length] > 0)
+            NSString *tmpString = [aObj objectAtIndex:0];
+            if ([tmpString length] > 0)
             {
-                [self setResultText:text];
+                [self setResultText:[finalResult stringByAppendingString:tmpString]];
             }
             break;
         }
@@ -157,8 +157,8 @@
                 NSString *candidateWord = [[dic allKeys] objectAtIndex:0];
                 [tmpString appendString:candidateWord];
             }
-            [self appendResultText:tmpString];
-            
+            finalResult = [finalResult stringByAppendingString:tmpString];
+            [self setResultText:finalResult];
             break;
         }
         case EVoiceRecognitionClientWorkStatusFinish:
