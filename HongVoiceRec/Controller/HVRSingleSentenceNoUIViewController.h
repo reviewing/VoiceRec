@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BDVoiceRecognitionClient.h"
 
-@interface HVRSingleSentenceNoUIViewController : UIViewController
+@interface HVRSingleSentenceNoUIViewController : UIViewController<MVoiceRecognitionClientDelegate>
 
 @end

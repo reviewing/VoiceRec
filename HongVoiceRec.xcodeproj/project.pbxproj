@@ -11,6 +11,7 @@
 		185A9E5B18260432004B29D8 /* HVRMultiSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */; };
 		185A9E5C18260432004B29D8 /* HVRSingleSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */; };
 		185A9E5F182604C0004B29D8 /* HVRSingleSentenceNoUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5E182604C0004B29D8 /* HVRSingleSentenceNoUIViewController.m */; };
+		185A9E621826123E004B29D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E641826123E004B29D8 /* Localizable.strings */; };
 		18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
 		18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80186182419D400A5CD65 /* CoreGraphics.framework */; };
 		18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
@@ -71,6 +72,8 @@
 		185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRSingleSentenceController.m; path = Controller/HVRSingleSentenceController.m; sourceTree = "<group>"; };
 		185A9E5D182604C0004B29D8 /* HVRSingleSentenceNoUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRSingleSentenceNoUIViewController.h; path = Controller/HVRSingleSentenceNoUIViewController.h; sourceTree = "<group>"; };
 		185A9E5E182604C0004B29D8 /* HVRSingleSentenceNoUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRSingleSentenceNoUIViewController.m; path = Controller/HVRSingleSentenceNoUIViewController.m; sourceTree = "<group>"; };
+		185A9E631826123E004B29D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		185A9E6518261241004B29D8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		18B80181182419D400A5CD65 /* HongVoiceRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongVoiceRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B80184182419D400A5CD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18B80186182419D400A5CD65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -256,6 +259,7 @@
 				18B8018D182419D400A5CD65 /* InfoPlist.strings */,
 				18B80190182419D400A5CD65 /* main.m */,
 				18B80192182419D400A5CD65 /* HongVoiceRec-Prefix.pch */,
+				185A9E641826123E004B29D8 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -457,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B8021E182513D300A5CD65 /* BDVoiceRecognitionClientResources in Resources */,
+				185A9E621826123E004B29D8 /* Localizable.strings in Resources */,
 				185A9E551825F868004B29D8 /* Version.plist in Resources */,
 				18B801A0182419D400A5CD65 /* Images.xcassets in Resources */,
 				18B8018F182419D400A5CD65 /* InfoPlist.strings in Resources */,
@@ -520,6 +525,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		185A9E641826123E004B29D8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185A9E631826123E004B29D8 /* Base */,
+				185A9E6518261241004B29D8 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		18B8018D182419D400A5CD65 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
