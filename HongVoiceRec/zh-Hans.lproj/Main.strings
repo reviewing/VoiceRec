@@ -28,3 +28,12 @@
 
 /* Class = "IBUIButton"; normalTitle = "Speak"; ObjectID = "BSU-FT-Hxd"; */
 "BSU-FT-Hxd.normalTitle" = "说话";
+
+/* Class = "IBUILabel"; text = "Single Sentence - no UI"; ObjectID = "VcJ-CV-q9u"; */
+"VcJ-CV-q9u.text" = "单句 - 无UI";
+
+/* Class = "IBUIButton"; normalTitle = "Speak"; ObjectID = "sDn-Kl-EOa"; */
+"sDn-Kl-EOa.normalTitle" = "说话";
+
+/* Class = "IBUITabBarItem"; title = "single(no UI)"; ObjectID = "3xp-hO-qxR"; */
+"3xp-hO-qxR.title" = "单句(无 UI)";
