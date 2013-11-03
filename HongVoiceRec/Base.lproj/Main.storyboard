@@ -151,6 +151,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="HRk-PP-wkj">
+                                <rect key="frame" x="20" y="394" width="280" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,6 +167,7 @@
                         <outlet property="cancelRecButton" destination="4BW-37-RFW" id="d1X-cy-dNo"/>
                         <outlet property="resultLabel" destination="HLh-Eq-k8v" id="ulx-fr-Da8"/>
                         <outlet property="speakButton" destination="sDn-Kl-EOa" id="1BP-2q-Wac"/>
+                        <outlet property="volumeBar" destination="HRk-PP-wkj" id="TCe-p8-zoz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gqj-cW-lJw" userLabel="First Responder" sceneMemberID="firstResponder"/>

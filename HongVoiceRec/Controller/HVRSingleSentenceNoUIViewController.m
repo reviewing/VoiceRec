@@ -11,14 +11,18 @@
 #define API_KEY @"LjfQaGXUdnHHGZFBReQBtVGs"
 #define SECRET_KEY @"awDw9VbFAAbFFKWDhcthn7MrZv44FQI0"
 
+#define VOLUME_UPDATE_INTERVAL 0.1
+
 @interface HVRSingleSentenceNoUIViewController ()
 {
     BOOL isSpeaking;
+    NSTimer *volumeUpdateTimer;
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *resultLabel;
 @property (strong, nonatomic) IBOutlet UIButton *speakButton;
 @property (strong, nonatomic) IBOutlet UIButton *cancelRecButton;
+@property (strong, nonatomic) IBOutlet UIProgressView *volumeBar;
 
 - (IBAction)tapToSpeak:(id)sender;
 - (IBAction)cancelRec:(id)sender;
@@ -57,17 +61,12 @@
 - (void)setResultText:(NSString *)text
 {
     self.resultLabel.text = text;
-    [self.resultLabel sizeToFit];
-    
-    // Resize the frame's width to 280 (320 - margins) see: http://stackoverflow.com/questions/1054558/vertically-align-text-within-a-uilabel
-    CGRect myFrame = self.resultLabel.frame;
-    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 280, myFrame.size.height);
-    self.resultLabel.frame = myFrame;
 }
 
 - (IBAction)tapToSpeak:(id)sender {
     if (isSpeaking) {
         [[BDVoiceRecognitionClient sharedInstance] speakFinish];
+        [self stopVolumeUpdate];
     }
     else {
         // 设置开发者信息
@@ -78,6 +77,9 @@
         
         // 开始监听音量
         [[BDVoiceRecognitionClient sharedInstance] listenCurrentDBLevelMeter];
+        
+        volumeUpdateTimer = [[NSTimer alloc] initWithFireDate:[[NSDate alloc] initWithTimeIntervalSinceNow:VOLUME_UPDATE_INTERVAL] interval:VOLUME_UPDATE_INTERVAL target:self selector:@selector(updateVolumeBar:) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:volumeUpdateTimer forMode:NSDefaultRunLoopMode];
         
         // 开始说话提示音
         [[BDVoiceRecognitionClient sharedInstance] setPlayTone:EVoiceRecognitionPlayTonesRecStart isPlay:YES];
@@ -92,6 +94,8 @@
             [self setResultText:[NSString stringWithFormat:@"启动失败，错误码：%d", startStatus]];
             return;
         }
+        
+        [self setResultText:@"请在听到提示音之后开始说话"];
     }
     
     isSpeaking = !isSpeaking;
@@ -107,6 +111,10 @@
     switch (aStatus) {
         case EVoiceRecognitionClientWorkStatusFinish:
         {
+            isSpeaking = NO;
+            [self setButtonsBasedOnSpeakingFlag];
+            [self stopVolumeUpdate];
+            
             self.resultLabel.text = nil;
             
             // 搜索模式下的结果为数组，示例为
@@ -122,10 +130,33 @@
             [self setResultText:tmpString];
             break;
         }
+        case EVoiceRecognitionClientWorkStatusEnd:
+        {
+            [self setResultText:@"识别中，请稍候..."];
+            [self stopVolumeUpdate];
+        }
         default:
         {
             break;
         }
     }
 }
+
+- (void)updateVolumeBar:(id)sender
+{
+    float volume = (float)[[BDVoiceRecognitionClient sharedInstance] getCurrentDBLevelMeter]/60;
+    if (volume > 1.0) {
+        volume = 1.0;
+    }
+    [self.volumeBar setProgress:(float)volume animated:NO];
+}
+
+- (void)stopVolumeUpdate
+{
+    [volumeUpdateTimer invalidate];
+    [self.volumeBar setProgress:0.01f animated:YES];
+    // 停止监听音量
+    [[BDVoiceRecognitionClient sharedInstance] cancelListenCurrentDBLevelMeter];
+}
+
 @end
