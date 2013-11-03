@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		185A9E551825F868004B29D8 /* Version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E541825F868004B29D8 /* Version.plist */; };
-		185A9E5B18260432004B29D8 /* HVRMultiSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */; };
 		185A9E5C18260432004B29D8 /* HVRSingleSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */; };
 		185A9E5F182604C0004B29D8 /* HVRNoUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */; };
 		185A9E621826123E004B29D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E641826123E004B29D8 /* Localizable.strings */; };
@@ -66,8 +65,6 @@
 
 /* Begin PBXFileReference section */
 		185A9E541825F868004B29D8 /* Version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Version.plist; path = HongVoiceRec/Resources/Version.plist; sourceTree = "<group>"; };
-		185A9E5718260432004B29D8 /* HVRMultiSentenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRMultiSentenceController.h; path = Controller/HVRMultiSentenceController.h; sourceTree = "<group>"; };
-		185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRMultiSentenceController.m; path = Controller/HVRMultiSentenceController.m; sourceTree = "<group>"; };
 		185A9E5918260432004B29D8 /* HVRSingleSentenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRSingleSentenceController.h; path = Controller/HVRSingleSentenceController.h; sourceTree = "<group>"; };
 		185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRSingleSentenceController.m; path = Controller/HVRSingleSentenceController.m; sourceTree = "<group>"; };
 		185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRNoUIViewController.h; path = Controller/HVRNoUIViewController.h; sourceTree = "<group>"; };
@@ -93,7 +90,6 @@
 		18B801B2182419D400A5CD65 /* HongVoiceRecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HongVoiceRecTests.m; sourceTree = "<group>"; };
 		18B801BD18241C7900A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		18B801BE18241C7900A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		18B801C01824E04A00A5CD65 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		18B801CE182510CF00A5CD65 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		18B801CF182510CF00A5CD65 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		18B801D0182510CF00A5CD65 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +141,7 @@
 		18B8021B1825129600A5CD65 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		18B8021D182513D300A5CD65 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BDVoiceRecognitionClientResources; path = HongVoiceRec/Resources/BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
 		18B8021F18251EE100A5CD65 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18DF301D18268CC3000A87C4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +183,6 @@
 		185A9E56182603E4004B29D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				185A9E5718260432004B29D8 /* HVRMultiSentenceController.h */,
-				185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */,
 				185A9E5918260432004B29D8 /* HVRSingleSentenceController.h */,
 				185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */,
 				185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */,
@@ -484,7 +479,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185A9E5B18260432004B29D8 /* HVRMultiSentenceController.m in Sources */,
 				18B801FA182510CF00A5CD65 /* Reachability.m in Sources */,
 				18B801F3182510CF00A5CD65 /* ASIDataCompressor.m in Sources */,
 				18B80191182419D400A5CD65 /* main.m in Sources */,
@@ -547,7 +541,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18B80197182419D400A5CD65 /* Base */,
-				18B801C01824E04A00A5CD65 /* zh-Hans */,
+				18DF301D18268CC3000A87C4 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

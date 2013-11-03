@@ -14,7 +14,15 @@
 #define SECRET_KEY @"awDw9VbFAAbFFKWDhcthn7MrZv44FQI0"
 
 @interface HVRSingleSentenceController ()
+{
+    int voiceRecMode;
+}
+
+@property (strong, nonatomic) IBOutlet UITextView *resultTextView;
 @property (nonatomic, retain) BDRecognizerViewController *recognizerViewController;
+
+- (IBAction)tapToSpeak:(id)sender;
+- (IBAction)switchMode:(UISwitch *)sender;
 @end
 
 @implementation HVRSingleSentenceController
@@ -22,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    voiceRecMode = EVoiceRecognitionModeSearch;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -38,16 +46,10 @@
 
 - (void)setText:(NSString *)text
 {
-    self.resultLabel.text = text;
-    [self.resultLabel sizeToFit];
-    
-    // Resize the frame's width to 280 (320 - margins) see: http://stackoverflow.com/questions/1054558/vertically-align-text-within-a-uilabel
-    CGRect myFrame = self.resultLabel.frame;
-    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 280, myFrame.size.height);
-    self.resultLabel.frame = myFrame;
+    self.resultTextView.text = text;
 }
 
-- (IBAction)tabToSpeak:(id)sender {
+- (IBAction)tapToSpeak:(id)sender {
     // 创建识别控件
     self.recognizerViewController = [[BDRecognizerViewController alloc] initWithOrigin:CGPointMake(9, 128) withTheme:[BDTheme defaultTheme]];
     self.recognizerViewController.delegate = self;
@@ -58,9 +60,9 @@
     // 开发者信息
     paramsObject.apiKey = API_KEY;
     paramsObject.secretKey = SECRET_KEY;
-
+    
     // 设置识别模式
-    paramsObject.recognitionMode = BDRecognizerRecognitionModeSearch;
+    paramsObject.recognitionMode = voiceRecMode;
     
     // 设置显示效果，是否开启连续上屏
     paramsObject.resultShowMode = BDRecognizerResultShowModeContinuousShow;
@@ -71,22 +73,63 @@
     [self.recognizerViewController startWithParams:paramsObject];
 }
 
+- (IBAction)switchMode:(UISwitch *)sender {
+    if (sender.on) {
+        voiceRecMode = EVoiceRecognitionModeSearch;
+    }
+    else
+    {
+        voiceRecMode = EVoiceRecognitionModeInput;
+    }
+}
+
 #pragma mark - BDRecognizerViewDelegate
 
 - (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerView withResults:(NSArray *)aResults
 {
-    self.resultLabel.text = nil;
-    
-    // 搜索模式下的结果为数组，示例为
-    // ["公园", "公元"]
-    NSMutableArray *audioResultData = (NSMutableArray *)aResults;
-    NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
-    
-    for (int i=0; i < [audioResultData count]; i++)
-    {
-        [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+    self.resultTextView.text = nil;
+    if (voiceRecMode == EVoiceRecognitionModeSearch) {
+        // 搜索模式下的结果为数组，示例为
+        // ["公园", "公元"]
+        NSMutableArray *audioResultData = (NSMutableArray *)aResults;
+        NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
+        
+        for (int i=0; i < [audioResultData count]; i++)
+        {
+            [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+        }
+        
+        [self setText:tmpString];
     }
-
-    [self setText:tmpString];
+    else
+    {
+        self.resultTextView.text = nil;
+        
+        // 输入模式下的结果为带置信度的结果，示例如下：
+        //  [
+        //      [
+        //         {
+        //             "百度" = "0.6055192947387695";
+        //         },
+        //         {
+        //             "摆渡" = "0.3625582158565521";
+        //         },
+        //      ]
+        //      [
+        //         {
+        //             "一下" = "0.7665404081344604";
+        //         }
+        //      ],
+        //   ]
+        NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
+        for (NSArray *result in aResults)
+        {
+            NSDictionary *dic = [result objectAtIndex:0];
+            NSString *candidateWord = [[dic allKeys] objectAtIndex:0];
+            [tmpString appendString:candidateWord];
+        }
+        
+        [self setText:tmpString];
+    }
 }
 @end

@@ -11,8 +11,4 @@
 
 @interface HVRSingleSentenceController : UIViewController<BDRecognizerViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UILabel *resultLabel;
-
-- (IBAction)tabToSpeak:(id)sender;
-
 @end
