@@ -82,13 +82,20 @@
         // 开始监听音量
         [[BDVoiceRecognitionClient sharedInstance] listenCurrentDBLevelMeter];
         
-        volumeUpdateTimer = [[NSTimer alloc] initWithFireDate:[[NSDate alloc] initWithTimeIntervalSinceNow:VOLUME_UPDATE_INTERVAL] interval:VOLUME_UPDATE_INTERVAL target:self selector:@selector(updateVolumeBar:) userInfo:nil repeats:YES];
+        volumeUpdateTimer = [[NSTimer alloc] initWithFireDate:
+                             [[NSDate alloc] initWithTimeIntervalSinceNow:VOLUME_UPDATE_INTERVAL]
+                                                     interval:VOLUME_UPDATE_INTERVAL
+                                                       target:self
+                                                     selector:@selector(updateVolumeBar:) userInfo:nil
+                                                      repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:volumeUpdateTimer forMode:NSDefaultRunLoopMode];
         
         // 开始说话提示音
-        [[BDVoiceRecognitionClient sharedInstance] setPlayTone:EVoiceRecognitionPlayTonesRecStart isPlay:YES];
+        [[BDVoiceRecognitionClient sharedInstance] setPlayTone:EVoiceRecognitionPlayTonesRecStart
+                                                        isPlay:YES];
         // 结束说话提示音
-        [[BDVoiceRecognitionClient sharedInstance] setPlayTone:EVoiceRecognitionPlayTonesRecEnd isPlay:YES];
+        [[BDVoiceRecognitionClient sharedInstance] setPlayTone:EVoiceRecognitionPlayTonesRecEnd
+                                                        isPlay:YES];
         
         int startStatus = -1;
         startStatus = [[BDVoiceRecognitionClient sharedInstance] startVoiceRecognition:self];
