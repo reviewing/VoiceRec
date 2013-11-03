@@ -35,7 +35,11 @@
 {
     [super viewDidLoad];
     isSpeaking = NO;
-    [self setButtonsBasedOnSpeakingFlag];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self setResultText:@"请点击说话按钮开始识别"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,7 +70,7 @@
 - (IBAction)tapToSpeak:(id)sender {
     if (isSpeaking) {
         [[BDVoiceRecognitionClient sharedInstance] speakFinish];
-        [self stopVolumeUpdate];
+        [self speakEnded];
     }
     else {
         // 设置开发者信息
@@ -95,7 +99,7 @@
             return;
         }
         
-        [self setResultText:@"请在听到提示音之后开始说话"];
+        [self setResultText:@"初始化，请稍后..."];
     }
     
     isSpeaking = !isSpeaking;
@@ -104,6 +108,7 @@
 
 - (IBAction)cancelRec:(id)sender {
     [[BDVoiceRecognitionClient sharedInstance] stopVoiceRecognition];
+    [self speakEnded];
 }
 
 - (void)VoiceRecognitionClientWorkStatus:(int) aStatus obj:(id)aObj
@@ -111,9 +116,7 @@
     switch (aStatus) {
         case EVoiceRecognitionClientWorkStatusFinish:
         {
-            isSpeaking = NO;
-            [self setButtonsBasedOnSpeakingFlag];
-            [self stopVolumeUpdate];
+            [self speakEnded];
             
             self.resultLabel.text = nil;
             
@@ -130,16 +133,58 @@
             [self setResultText:tmpString];
             break;
         }
+        case EVoiceRecognitionClientWorkStatusStartWorkIng:
+        {
+            [self setResultText:@"请说话"];
+            break;
+        }
         case EVoiceRecognitionClientWorkStatusEnd:
         {
             [self setResultText:@"识别中，请稍候..."];
             [self stopVolumeUpdate];
+            break;
+        }
+        case EVoiceRecognitionClientWorkStatusCancel:
+        {
+            [self setResultText:@"已取消，点击说话按钮开始识别"];
+            break;
         }
         default:
         {
             break;
         }
     }
+}
+
+// 网络连接指示器
+- (void)VoiceRecognitionClientNetWorkStatus:(int) aStatus
+{
+    switch (aStatus)
+    {
+        case EVoiceRecognitionClientNetWorkStatusStart:
+        {
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+            break;
+        }
+        case EVoiceRecognitionClientNetWorkStatusEnd:
+        {
+			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+            break;
+        }
+    }
+}
+
+- (void)VoiceRecognitionClientErrorStatus:(int) aStatus subStatus:(int)aSubStatus
+{
+    [self setResultText:[NSString stringWithFormat:@"识别出错，错误码%d", aSubStatus]];
+    [self speakEnded];
+}
+
+- (void)speakEnded
+{
+    isSpeaking = NO;
+    [self setButtonsBasedOnSpeakingFlag];
+    [self stopVolumeUpdate];
 }
 
 - (void)updateVolumeBar:(id)sender
