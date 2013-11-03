@@ -39,7 +39,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self setResultText:@"请点击说话按钮开始识别"];
+    [self setResultText:NSLocalizedString(@"TapSpeakButtonToRec", nil)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,11 +102,11 @@
         // 启动失败，报告错误
         if (startStatus != EVoiceRecognitionStartWorking)
         {
-            [self setResultText:[NSString stringWithFormat:@"启动失败，错误码：%d", startStatus]];
+            [self setResultText:[NSString stringWithFormat:NSLocalizedString(@"StartVoiceRecError", nil), startStatus]];
             return;
         }
         
-        [self setResultText:@"初始化，请稍后..."];
+        [self setResultText:NSLocalizedString(@"WaitInitializeFinish", nil)];
     }
     
     isSpeaking = !isSpeaking;
@@ -151,7 +151,7 @@
         }
         case EVoiceRecognitionClientWorkStatusStartWorkIng:
         {
-            [self setResultText:@"请说话"];
+            [self setResultText:NSLocalizedString(@"PleaseSpeak", nil)];
             break;
         }
         case EVoiceRecognitionClientWorkStatusEnd:
@@ -161,7 +161,7 @@
         }
         case EVoiceRecognitionClientWorkStatusCancel:
         {
-            [self setResultText:@"已取消，点击说话按钮开始识别"];
+            [self setResultText:NSLocalizedString(@"Canceled", nil)];
             break;
         }
         default:
@@ -191,7 +191,7 @@
 
 - (void)VoiceRecognitionClientErrorStatus:(int) aStatus subStatus:(int)aSubStatus
 {
-    [self setResultText:[NSString stringWithFormat:@"识别出错，错误码%d", aSubStatus]];
+    [self setResultText:[NSString stringWithFormat:NSLocalizedString(@"VoiceRecError", nil), aSubStatus]];
     [self speakEnded];
 }
 

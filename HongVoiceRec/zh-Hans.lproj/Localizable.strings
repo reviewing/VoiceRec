@@ -8,3 +8,9 @@
 
 "FinishSpeaking" = "说完了";
 "Speak" = "说话";
+"TapSpeakButtonToRec" = "请点击说话按钮开始识别";
+"StartVoiceRecError" = "启动失败，错误码：%d";
+"WaitInitializeFinish" = "初始化，请稍侯...";
+"VoiceRecError" = "识别出错，错误码：%d";
+"PleaseSpeak" = "请说话";
+"Canceled" = "已取消，点击说话按钮开始识别";
