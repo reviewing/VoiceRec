@@ -35,7 +35,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self setResultText:@"请点击说话按钮开始识别"];
+    [self setResultText:NSLocalizedString(@"TapSpeakButtonToRec", nil)];
 }
 
 - (void)didReceiveMemoryWarning
