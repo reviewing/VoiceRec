@@ -126,7 +126,7 @@
                                     <action selector="tapToSpeak:" destination="QUy-BD-bpt" eventType="touchUpInside" id="ylg-2N-9Jz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BW-37-RFW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BW-37-RFW">
                                 <rect key="frame" x="256" y="468" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel">
@@ -184,8 +184,10 @@
                             <constraint firstItem="M2m-iF-afu" firstAttribute="centerY" secondItem="wB4-R6-nmC" secondAttribute="centerY" id="ITn-0b-E0o"/>
                             <constraint firstAttribute="bottom" secondItem="cej-70-nOb" secondAttribute="bottom" constant="108" id="Ods-wG-teV"/>
                             <constraint firstItem="cej-70-nOb" firstAttribute="leading" secondItem="wB4-R6-nmC" secondAttribute="trailing" constant="8" id="QrH-8q-AGV"/>
+                            <constraint firstItem="sDn-Kl-EOa" firstAttribute="top" secondItem="4BW-37-RFW" secondAttribute="top" id="R9o-xX-99S"/>
                             <constraint firstItem="bAe-Cx-30w" firstAttribute="top" secondItem="VcJ-CV-q9u" secondAttribute="bottom" constant="8" id="YQk-EY-rZG"/>
                             <constraint firstItem="bAe-Cx-30w" firstAttribute="width" secondItem="HRk-PP-wkj" secondAttribute="width" id="ZhR-9K-Xl8"/>
+                            <constraint firstItem="4BW-37-RFW" firstAttribute="leading" secondItem="sDn-Kl-EOa" secondAttribute="trailing" constant="74" id="ZrE-o4-E92"/>
                             <constraint firstAttribute="centerX" secondItem="VcJ-CV-q9u" secondAttribute="centerX" id="c1l-L3-7hb"/>
                             <constraint firstAttribute="trailing" secondItem="bAe-Cx-30w" secondAttribute="trailing" constant="20" id="cT3-Ru-NwF"/>
                             <constraint firstAttribute="centerX" secondItem="bAe-Cx-30w" secondAttribute="centerX" id="ft4-bq-w90"/>
