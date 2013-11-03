@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		185A9E551825F868004B29D8 /* Version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E541825F868004B29D8 /* Version.plist */; };
+		185A9E5B18260432004B29D8 /* HVRMultiSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */; };
+		185A9E5C18260432004B29D8 /* HVRSingleSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */; };
 		18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
 		18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80186182419D400A5CD65 /* CoreGraphics.framework */; };
 		18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
@@ -15,8 +17,6 @@
 		18B80191182419D400A5CD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B80190182419D400A5CD65 /* main.m */; };
 		18B80195182419D400A5CD65 /* HVRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B80194182419D400A5CD65 /* HVRAppDelegate.m */; };
 		18B80198182419D400A5CD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B80196182419D400A5CD65 /* Main.storyboard */; };
-		18B8019B182419D400A5CD65 /* HVRSingleSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019A182419D400A5CD65 /* HVRSingleSentenceController.m */; };
-		18B8019E182419D400A5CD65 /* HVRMultiSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8019D182419D400A5CD65 /* HVRMultiSentenceController.m */; };
 		18B801A0182419D400A5CD65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8019F182419D400A5CD65 /* Images.xcassets */; };
 		18B801A7182419D400A5CD65 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B801A6182419D400A5CD65 /* XCTest.framework */; };
 		18B801A8182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
@@ -64,6 +64,10 @@
 
 /* Begin PBXFileReference section */
 		185A9E541825F868004B29D8 /* Version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Version.plist; path = HongVoiceRec/Resources/Version.plist; sourceTree = "<group>"; };
+		185A9E5718260432004B29D8 /* HVRMultiSentenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRMultiSentenceController.h; path = Controller/HVRMultiSentenceController.h; sourceTree = "<group>"; };
+		185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRMultiSentenceController.m; path = Controller/HVRMultiSentenceController.m; sourceTree = "<group>"; };
+		185A9E5918260432004B29D8 /* HVRSingleSentenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRSingleSentenceController.h; path = Controller/HVRSingleSentenceController.h; sourceTree = "<group>"; };
+		185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRSingleSentenceController.m; path = Controller/HVRSingleSentenceController.m; sourceTree = "<group>"; };
 		18B80181182419D400A5CD65 /* HongVoiceRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongVoiceRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B80184182419D400A5CD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18B80186182419D400A5CD65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,10 +79,6 @@
 		18B80193182419D400A5CD65 /* HVRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRAppDelegate.h; sourceTree = "<group>"; };
 		18B80194182419D400A5CD65 /* HVRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRAppDelegate.m; sourceTree = "<group>"; };
 		18B80197182419D400A5CD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18B80199182419D400A5CD65 /* HVRSingleSentenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRSingleSentenceController.h; sourceTree = "<group>"; };
-		18B8019A182419D400A5CD65 /* HVRSingleSentenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRSingleSentenceController.m; sourceTree = "<group>"; };
-		18B8019C182419D400A5CD65 /* HVRMultiSentenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVRMultiSentenceController.h; sourceTree = "<group>"; };
-		18B8019D182419D400A5CD65 /* HVRMultiSentenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVRMultiSentenceController.m; sourceTree = "<group>"; };
 		18B8019F182419D400A5CD65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18B801A5182419D400A5CD65 /* HongVoiceRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HongVoiceRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B801A6182419D400A5CD65 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -177,6 +177,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185A9E56182603E4004B29D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185A9E5718260432004B29D8 /* HVRMultiSentenceController.h */,
+				185A9E5818260432004B29D8 /* HVRMultiSentenceController.m */,
+				185A9E5918260432004B29D8 /* HVRSingleSentenceController.h */,
+				185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		18B80178182419D400A5CD65 = {
 			isa = PBXGroup;
 			children = (
@@ -222,14 +233,11 @@
 		18B8018A182419D400A5CD65 /* HongVoiceRec */ = {
 			isa = PBXGroup;
 			children = (
+				185A9E56182603E4004B29D8 /* Controller */,
 				18B801C118250E7000A5CD65 /* Libs */,
 				18B80193182419D400A5CD65 /* HVRAppDelegate.h */,
 				18B80194182419D400A5CD65 /* HVRAppDelegate.m */,
 				18B80196182419D400A5CD65 /* Main.storyboard */,
-				18B80199182419D400A5CD65 /* HVRSingleSentenceController.h */,
-				18B8019A182419D400A5CD65 /* HVRSingleSentenceController.m */,
-				18B8019C182419D400A5CD65 /* HVRMultiSentenceController.h */,
-				18B8019D182419D400A5CD65 /* HVRMultiSentenceController.m */,
 				18B8019F182419D400A5CD65 /* Images.xcassets */,
 				18B8018B182419D400A5CD65 /* Supporting Files */,
 			);
@@ -466,9 +474,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185A9E5B18260432004B29D8 /* HVRMultiSentenceController.m in Sources */,
 				18B801FA182510CF00A5CD65 /* Reachability.m in Sources */,
 				18B801F3182510CF00A5CD65 /* ASIDataCompressor.m in Sources */,
-				18B8019B182419D400A5CD65 /* HVRSingleSentenceController.m in Sources */,
 				18B80191182419D400A5CD65 /* main.m in Sources */,
 				18B801FE182510CF00A5CD65 /* JSONKit.m in Sources */,
 				18B801F2182510CF00A5CD65 /* ASIAuthenticationDialog.m in Sources */,
@@ -480,8 +488,8 @@
 				18B801F7182510CF00A5CD65 /* ASIHTTPRequest.m in Sources */,
 				18B801F5182510CF00A5CD65 /* ASIDownloadCache.m in Sources */,
 				18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */,
+				185A9E5C18260432004B29D8 /* HVRSingleSentenceController.m in Sources */,
 				18B801FB182510CF00A5CD65 /* CADebugMacros.cpp in Sources */,
-				18B8019E182419D400A5CD65 /* HVRMultiSentenceController.m in Sources */,
 				18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */,
 				18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */,
 			);
