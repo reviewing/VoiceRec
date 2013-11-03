@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185A9E551825F868004B29D8 /* Version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E541825F868004B29D8 /* Version.plist */; };
 		18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
 		18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80186182419D400A5CD65 /* CoreGraphics.framework */; };
 		18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185A9E541825F868004B29D8 /* Version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Version.plist; path = HongVoiceRec/Resources/Version.plist; sourceTree = "<group>"; };
 		18B80181182419D400A5CD65 /* HongVoiceRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongVoiceRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B80184182419D400A5CD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18B80186182419D400A5CD65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -278,6 +280,7 @@
 		18B801C218250F8100A5CD65 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				185A9E541825F868004B29D8 /* Version.plist */,
 				18B8021D182513D300A5CD65 /* BDVoiceRecognitionClientResources */,
 			);
 			name = Resources;
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B8021E182513D300A5CD65 /* BDVoiceRecognitionClientResources in Resources */,
+				185A9E551825F868004B29D8 /* Version.plist in Resources */,
 				18B801A0182419D400A5CD65 /* Images.xcassets in Resources */,
 				18B8018F182419D400A5CD65 /* InfoPlist.strings in Resources */,
 				18B80198182419D400A5CD65 /* Main.storyboard in Resources */,
