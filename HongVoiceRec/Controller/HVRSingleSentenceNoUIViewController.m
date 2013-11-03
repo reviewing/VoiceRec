@@ -165,7 +165,8 @@
         {
             [self speakEnded];
             
-            if (voiceRecMode == EVoiceRecognitionModeSearch) {
+            if (voiceRecMode == EVoiceRecognitionModeSearch)
+            {
                 // 搜索模式下的结果为数组，示例为
                 // ["公园", "公元"]
                 NSMutableArray *audioResultData = (NSMutableArray *)aObj;
@@ -177,6 +178,13 @@
                 }
                 
                 [self setResultText:tmpString];
+            }
+            else
+            {
+                // 输入模式将最后一个逗号修改为句号
+                if (finalResult.length > 0 || [[finalResult substringWithRange:NSMakeRange(finalResult.length - 1, 1)] isEqualToString:@"，"]) {
+                    [self setResultText:[[finalResult substringToIndex:finalResult.length - 1] stringByAppendingString:@"。"]];
+                }
             }
             
             break;
