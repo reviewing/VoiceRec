@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--Single Sentence Controller - First-->
+        <!--Built InUI Controller - First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="HVRSingleSentenceController" sceneMemberID="viewController">
+                <viewController title="First" id="CZ4-MO-1fc" customClass="HVRBuiltInUIController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rfd-D4-DUP"/>
                         <viewControllerLayoutGuide type="bottom" id="NFN-G8-fRW"/>

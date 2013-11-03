@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		185A9E551825F868004B29D8 /* Version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E541825F868004B29D8 /* Version.plist */; };
-		185A9E5C18260432004B29D8 /* HVRSingleSentenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */; };
+		185A9E5C18260432004B29D8 /* HVRBuiltInUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */; };
 		185A9E5F182604C0004B29D8 /* HVRNoUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */; };
 		185A9E621826123E004B29D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E641826123E004B29D8 /* Localizable.strings */; };
 		18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
@@ -65,8 +65,8 @@
 
 /* Begin PBXFileReference section */
 		185A9E541825F868004B29D8 /* Version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Version.plist; path = HongVoiceRec/Resources/Version.plist; sourceTree = "<group>"; };
-		185A9E5918260432004B29D8 /* HVRSingleSentenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRSingleSentenceController.h; path = Controller/HVRSingleSentenceController.h; sourceTree = "<group>"; };
-		185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRSingleSentenceController.m; path = Controller/HVRSingleSentenceController.m; sourceTree = "<group>"; };
+		185A9E5918260432004B29D8 /* HVRBuiltInUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRBuiltInUIController.h; path = Controller/HVRBuiltInUIController.h; sourceTree = "<group>"; };
+		185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRBuiltInUIController.m; path = Controller/HVRBuiltInUIController.m; sourceTree = "<group>"; };
 		185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRNoUIViewController.h; path = Controller/HVRNoUIViewController.h; sourceTree = "<group>"; };
 		185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRNoUIViewController.m; path = Controller/HVRNoUIViewController.m; sourceTree = "<group>"; };
 		185A9E631826123E004B29D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		185A9E56182603E4004B29D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				185A9E5918260432004B29D8 /* HVRSingleSentenceController.h */,
-				185A9E5A18260432004B29D8 /* HVRSingleSentenceController.m */,
+				185A9E5918260432004B29D8 /* HVRBuiltInUIController.h */,
+				185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */,
 				185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */,
 				185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */,
 			);
@@ -493,7 +493,7 @@
 				18B801F7182510CF00A5CD65 /* ASIHTTPRequest.m in Sources */,
 				18B801F5182510CF00A5CD65 /* ASIDownloadCache.m in Sources */,
 				18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */,
-				185A9E5C18260432004B29D8 /* HVRSingleSentenceController.m in Sources */,
+				185A9E5C18260432004B29D8 /* HVRBuiltInUIController.m in Sources */,
 				18B801FB182510CF00A5CD65 /* CADebugMacros.cpp in Sources */,
 				18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */,
 				18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  HVRSingleSentenceController.h
+//  HVRBuiltInUIController.h
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-2.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BDRecognizerViewDelegate.h"
 
-@interface HVRSingleSentenceController : UIViewController<BDRecognizerViewDelegate>
+@interface HVRBuiltInUIController : UIViewController<BDRecognizerViewDelegate>
 
 @end

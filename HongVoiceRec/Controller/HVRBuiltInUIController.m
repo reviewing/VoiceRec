@@ -1,19 +1,19 @@
 //
-//  HVRSingleSentenceController.m
+//  HVRBuiltInUIController.m
 //  HongVoiceRec
 //
 //  Created by  段弘 on 13-11-2.
 //  Copyright (c) 2013年 百度. All rights reserved.
 //
 
-#import "HVRSingleSentenceController.h"
+#import "HVRBuiltInUIController.h"
 #import "BDRecognizerViewController.h"
 #import "BDTheme.h"
 
 #define API_KEY @"LjfQaGXUdnHHGZFBReQBtVGs"
 #define SECRET_KEY @"awDw9VbFAAbFFKWDhcthn7MrZv44FQI0"
 
-@interface HVRSingleSentenceController ()
+@interface HVRBuiltInUIController ()
 {
     int voiceRecMode;
 }
@@ -25,7 +25,7 @@
 - (IBAction)switchMode:(UISwitch *)sender;
 @end
 
-@implementation HVRSingleSentenceController
+@implementation HVRBuiltInUIController
 
 - (void)viewDidLoad
 {
@@ -35,7 +35,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self setText:@"请点击说话按钮开始识别"];
+    [self setResultText:@"请点击说话按钮开始识别"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setText:(NSString *)text
+- (void)setResultText:(NSString *)text
 {
     self.resultTextView.text = text;
 }
@@ -99,7 +99,7 @@
             [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
         }
         
-        [self setText:tmpString];
+        [self setResultText:tmpString];
     }
     else
     {
@@ -129,7 +129,7 @@
             [tmpString appendString:candidateWord];
         }
         
-        [self setText:tmpString];
+        [self setResultText:tmpString];
     }
 }
 @end
