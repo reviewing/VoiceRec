@@ -138,14 +138,14 @@
                                     <action selector="tapToSpeak:" destination="QUy-BD-bpt" eventType="touchUpInside" id="HVu-cu-CvJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No built-in UI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-CV-q9u">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No built-in UI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-CV-q9u">
                                 <rect key="frame" x="20" y="20" width="280" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="HLh-Eq-k8v">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="HLh-Eq-k8v">
                                 <rect key="frame" x="20" y="80" width="280" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -177,10 +177,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="VcJ-CV-q9u" secondAttribute="centerX" id="3iH-Zo-pvL"/>
                             <constraint firstItem="M2m-iF-afu" firstAttribute="leading" secondItem="cej-70-nOb" secondAttribute="trailing" constant="8" id="Gqc-F6-ITe"/>
                             <constraint firstItem="M2m-iF-afu" firstAttribute="centerY" secondItem="wB4-R6-nmC" secondAttribute="centerY" id="ITn-0b-E0o"/>
+                            <constraint firstAttribute="centerX" secondItem="HLh-Eq-k8v" secondAttribute="centerX" id="Iun-3q-ljd"/>
+                            <constraint firstItem="VcJ-CV-q9u" firstAttribute="top" secondItem="SAW-6w-aa4" secondAttribute="top" constant="20" id="JeP-XJ-Eu7"/>
+                            <constraint firstItem="HLh-Eq-k8v" firstAttribute="leading" secondItem="SAW-6w-aa4" secondAttribute="leading" constant="20" id="KCq-3J-Owe"/>
+                            <constraint firstAttribute="trailing" secondItem="HLh-Eq-k8v" secondAttribute="trailing" constant="20" id="LDU-Se-9cX"/>
                             <constraint firstAttribute="bottom" secondItem="cej-70-nOb" secondAttribute="bottom" constant="108" id="Ods-wG-teV"/>
                             <constraint firstItem="cej-70-nOb" firstAttribute="leading" secondItem="wB4-R6-nmC" secondAttribute="trailing" constant="8" id="QrH-8q-AGV"/>
+                            <constraint firstItem="HLh-Eq-k8v" firstAttribute="top" secondItem="VcJ-CV-q9u" secondAttribute="bottom" constant="18" id="ihO-9w-0rz"/>
                             <constraint firstAttribute="centerX" secondItem="cej-70-nOb" secondAttribute="centerX" id="mBh-d9-aog"/>
                             <constraint firstItem="M2m-iF-afu" firstAttribute="centerY" secondItem="cej-70-nOb" secondAttribute="centerY" id="shf-H6-Wyu"/>
                             <constraint firstAttribute="centerX" secondItem="sDn-Kl-EOa" secondAttribute="centerX" id="vZ7-nV-hxe"/>
