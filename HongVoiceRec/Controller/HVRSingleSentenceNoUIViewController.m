@@ -144,7 +144,7 @@
             NSString *tmpString = [aObj objectAtIndex:0];
             if ([tmpString length] > 0)
             {
-                [self setResultText:[finalResult stringByAppendingString:tmpString]];
+                [self setResultText:[finalResult stringByAppendingFormat:@"%@...", tmpString]];
             }
             break;
         }
