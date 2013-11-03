@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
@@ -182,12 +183,11 @@
                             <constraint firstItem="M2m-iF-afu" firstAttribute="leading" secondItem="cej-70-nOb" secondAttribute="trailing" constant="8" id="Gqc-F6-ITe"/>
                             <constraint firstItem="bAe-Cx-30w" firstAttribute="leading" secondItem="SAW-6w-aa4" secondAttribute="leading" constant="20" id="HXi-P3-5B4"/>
                             <constraint firstItem="M2m-iF-afu" firstAttribute="centerY" secondItem="wB4-R6-nmC" secondAttribute="centerY" id="ITn-0b-E0o"/>
-                            <constraint firstAttribute="bottom" secondItem="cej-70-nOb" secondAttribute="bottom" constant="108" id="Ods-wG-teV"/>
+                            <constraint firstAttribute="trailing" secondItem="4BW-37-RFW" secondAttribute="trailing" constant="16" id="Kx6-rl-RzV"/>
                             <constraint firstItem="cej-70-nOb" firstAttribute="leading" secondItem="wB4-R6-nmC" secondAttribute="trailing" constant="8" id="QrH-8q-AGV"/>
                             <constraint firstItem="sDn-Kl-EOa" firstAttribute="top" secondItem="4BW-37-RFW" secondAttribute="top" id="R9o-xX-99S"/>
                             <constraint firstItem="bAe-Cx-30w" firstAttribute="top" secondItem="VcJ-CV-q9u" secondAttribute="bottom" constant="8" id="YQk-EY-rZG"/>
                             <constraint firstItem="bAe-Cx-30w" firstAttribute="width" secondItem="HRk-PP-wkj" secondAttribute="width" id="ZhR-9K-Xl8"/>
-                            <constraint firstItem="4BW-37-RFW" firstAttribute="leading" secondItem="sDn-Kl-EOa" secondAttribute="trailing" constant="74" id="ZrE-o4-E92"/>
                             <constraint firstAttribute="centerX" secondItem="VcJ-CV-q9u" secondAttribute="centerX" id="c1l-L3-7hb"/>
                             <constraint firstAttribute="trailing" secondItem="bAe-Cx-30w" secondAttribute="trailing" constant="20" id="cT3-Ru-NwF"/>
                             <constraint firstAttribute="centerX" secondItem="bAe-Cx-30w" secondAttribute="centerX" id="ft4-bq-w90"/>
@@ -198,6 +198,7 @@
                             <constraint firstAttribute="centerX" secondItem="sDn-Kl-EOa" secondAttribute="centerX" id="vZ7-nV-hxe"/>
                             <constraint firstAttribute="bottom" secondItem="sDn-Kl-EOa" secondAttribute="bottom" constant="70" id="xY3-Nx-WHO"/>
                             <constraint firstItem="cej-70-nOb" firstAttribute="top" secondItem="HRk-PP-wkj" secondAttribute="bottom" constant="8" id="zWM-vK-2l6"/>
+                            <constraint firstItem="sDn-Kl-EOa" firstAttribute="top" secondItem="cej-70-nOb" secondAttribute="bottom" constant="8" id="zX4-ug-tuE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="No built-in UI" image="first" id="3xp-hO-qxR"/>
