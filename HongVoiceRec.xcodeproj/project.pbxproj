@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		185A9E551825F868004B29D8 /* Version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E541825F868004B29D8 /* Version.plist */; };
 		185A9E5C18260432004B29D8 /* HVRBuiltInUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */; };
 		185A9E5F182604C0004B29D8 /* HVRNoUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */; };
 		185A9E621826123E004B29D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E641826123E004B29D8 /* Localizable.strings */; };
@@ -64,7 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		185A9E541825F868004B29D8 /* Version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Version.plist; path = HongVoiceRec/Resources/Version.plist; sourceTree = "<group>"; };
 		185A9E5918260432004B29D8 /* HVRBuiltInUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRBuiltInUIController.h; path = Controller/HVRBuiltInUIController.h; sourceTree = "<group>"; };
 		185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRBuiltInUIController.m; path = Controller/HVRBuiltInUIController.m; sourceTree = "<group>"; };
 		185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRNoUIViewController.h; path = Controller/HVRNoUIViewController.h; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 		18B801C218250F8100A5CD65 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				185A9E541825F868004B29D8 /* Version.plist */,
 				18B8021D182513D300A5CD65 /* BDVoiceRecognitionClientResources */,
 			);
 			name = Resources;
@@ -457,7 +454,6 @@
 			files = (
 				18B8021E182513D300A5CD65 /* BDVoiceRecognitionClientResources in Resources */,
 				185A9E621826123E004B29D8 /* Localizable.strings in Resources */,
-				185A9E551825F868004B29D8 /* Version.plist in Resources */,
 				18B801A0182419D400A5CD65 /* Images.xcassets in Resources */,
 				18B8018F182419D400A5CD65 /* InfoPlist.strings in Resources */,
 				18B80198182419D400A5CD65 /* Main.storyboard in Resources */,
