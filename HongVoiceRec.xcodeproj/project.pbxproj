@@ -646,6 +646,7 @@
 					"$(inherited)",
 					/Users/duanhong/projects/git/duanhong169.github.com/VoiceRec/HongVoiceRec/Libs/BaiduVRLib,
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -667,6 +668,7 @@
 					"$(inherited)",
 					/Users/duanhong/projects/git/duanhong169.github.com/VoiceRec/HongVoiceRec/Libs/BaiduVRLib,
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
