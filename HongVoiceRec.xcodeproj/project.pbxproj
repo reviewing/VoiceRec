@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		185A9E5C18260432004B29D8 /* HVRBuiltInUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */; };
 		185A9E5F182604C0004B29D8 /* HVRNoUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */; };
 		185A9E621826123E004B29D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185A9E641826123E004B29D8 /* Localizable.strings */; };
+		1898533A182A25BC006A27F5 /* libVoiceRecognitionClientOpenNoUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18985339182A25BC006A27F5 /* libVoiceRecognitionClientOpenNoUI.a */; };
 		18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80184182419D400A5CD65 /* Foundation.framework */; };
 		18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80186182419D400A5CD65 /* CoreGraphics.framework */; };
 		18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80188182419D400A5CD65 /* UIKit.framework */; };
@@ -37,11 +37,6 @@
 		18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EA182510CF00A5CD65 /* CAXException.cpp */; };
 		18B801FE182510CF00A5CD65 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EE182510CF00A5CD65 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801F1182510CF00A5CD65 /* TTTAttributedLabel.m */; };
-		18B80207182510FD00A5CD65 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B80206182510FD00A5CD65 /* libBDVoiceRecognitionClient.a */; };
-		18B8020A1825119900A5CD65 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802091825119900A5CD65 /* GLKit.framework */; };
-		18B8020C182511A100A5CD65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8020B182511A100A5CD65 /* QuartzCore.framework */; };
-		18B8020E182511B700A5CD65 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8020D182511B700A5CD65 /* OpenGLES.framework */; };
-		18B802101825125D00A5CD65 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8020F1825125D00A5CD65 /* CoreText.framework */; };
 		18B802121825126900A5CD65 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802111825126900A5CD65 /* MobileCoreServices.framework */; };
 		18B802141825127500A5CD65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802131825127500A5CD65 /* SystemConfiguration.framework */; };
 		18B802161825127C00A5CD65 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802151825127C00A5CD65 /* libz.1.2.5.dylib */; };
@@ -63,12 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		185A9E5918260432004B29D8 /* HVRBuiltInUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRBuiltInUIController.h; path = Controller/HVRBuiltInUIController.h; sourceTree = "<group>"; };
-		185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRBuiltInUIController.m; path = Controller/HVRBuiltInUIController.m; sourceTree = "<group>"; };
 		185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVRNoUIViewController.h; path = Controller/HVRNoUIViewController.h; sourceTree = "<group>"; };
 		185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVRNoUIViewController.m; path = Controller/HVRNoUIViewController.m; sourceTree = "<group>"; };
 		185A9E631826123E004B29D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		185A9E6518261241004B29D8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		18985339182A25BC006A27F5 /* libVoiceRecognitionClientOpenNoUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVoiceRecognitionClientOpenNoUI.a; sourceTree = "<group>"; };
 		18B80181182419D400A5CD65 /* HongVoiceRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongVoiceRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B80184182419D400A5CD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18B80186182419D400A5CD65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,16 +115,7 @@
 		18B801EE182510CF00A5CD65 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		18B801F0182510CF00A5CD65 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		18B801F1182510CF00A5CD65 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
-		18B80201182510FD00A5CD65 /* BDRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
-		18B80202182510FD00A5CD65 /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
-		18B80203182510FD00A5CD65 /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
-		18B80204182510FD00A5CD65 /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
 		18B80205182510FD00A5CD65 /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
-		18B80206182510FD00A5CD65 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBDVoiceRecognitionClient.a; sourceTree = "<group>"; };
-		18B802091825119900A5CD65 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		18B8020B182511A100A5CD65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		18B8020D182511B700A5CD65 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		18B8020F1825125D00A5CD65 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		18B802111825126900A5CD65 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		18B802131825127500A5CD65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		18B802151825127C00A5CD65 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -154,11 +139,7 @@
 				18B802161825127C00A5CD65 /* libz.1.2.5.dylib in Frameworks */,
 				18B802141825127500A5CD65 /* SystemConfiguration.framework in Frameworks */,
 				18B802121825126900A5CD65 /* MobileCoreServices.framework in Frameworks */,
-				18B802101825125D00A5CD65 /* CoreText.framework in Frameworks */,
-				18B8020E182511B700A5CD65 /* OpenGLES.framework in Frameworks */,
-				18B8020C182511A100A5CD65 /* QuartzCore.framework in Frameworks */,
-				18B8020A1825119900A5CD65 /* GLKit.framework in Frameworks */,
-				18B80207182510FD00A5CD65 /* libBDVoiceRecognitionClient.a in Frameworks */,
+				1898533A182A25BC006A27F5 /* libVoiceRecognitionClientOpenNoUI.a in Frameworks */,
 				18B80187182419D400A5CD65 /* CoreGraphics.framework in Frameworks */,
 				18B80189182419D400A5CD65 /* UIKit.framework in Frameworks */,
 				18B80185182419D400A5CD65 /* Foundation.framework in Frameworks */,
@@ -181,8 +162,6 @@
 		185A9E56182603E4004B29D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				185A9E5918260432004B29D8 /* HVRBuiltInUIController.h */,
-				185A9E5A18260432004B29D8 /* HVRBuiltInUIController.m */,
 				185A9E5D182604C0004B29D8 /* HVRNoUIViewController.h */,
 				185A9E5E182604C0004B29D8 /* HVRNoUIViewController.m */,
 			);
@@ -219,10 +198,6 @@
 				18B802151825127C00A5CD65 /* libz.1.2.5.dylib */,
 				18B802131825127500A5CD65 /* SystemConfiguration.framework */,
 				18B802111825126900A5CD65 /* MobileCoreServices.framework */,
-				18B8020F1825125D00A5CD65 /* CoreText.framework */,
-				18B8020D182511B700A5CD65 /* OpenGLES.framework */,
-				18B8020B182511A100A5CD65 /* QuartzCore.framework */,
-				18B802091825119900A5CD65 /* GLKit.framework */,
 				18B80184182419D400A5CD65 /* Foundation.framework */,
 				18B80186182419D400A5CD65 /* CoreGraphics.framework */,
 				18B80188182419D400A5CD65 /* UIKit.framework */,
@@ -363,12 +338,8 @@
 		18B80200182510FD00A5CD65 /* BaiduVRLib */ = {
 			isa = PBXGroup;
 			children = (
-				18B80201182510FD00A5CD65 /* BDRecognizerViewController.h */,
-				18B80202182510FD00A5CD65 /* BDRecognizerViewDelegate.h */,
-				18B80203182510FD00A5CD65 /* BDRecognizerViewParamsObject.h */,
-				18B80204182510FD00A5CD65 /* BDTheme.h */,
+				18985339182A25BC006A27F5 /* libVoiceRecognitionClientOpenNoUI.a */,
 				18B80205182510FD00A5CD65 /* BDVoiceRecognitionClient.h */,
-				18B80206182510FD00A5CD65 /* libBDVoiceRecognitionClient.a */,
 			);
 			name = BaiduVRLib;
 			path = Libs/BaiduVRLib;
@@ -489,7 +460,6 @@
 				18B801F7182510CF00A5CD65 /* ASIHTTPRequest.m in Sources */,
 				18B801F5182510CF00A5CD65 /* ASIDownloadCache.m in Sources */,
 				18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */,
-				185A9E5C18260432004B29D8 /* HVRBuiltInUIController.m in Sources */,
 				18B801FB182510CF00A5CD65 /* CADebugMacros.cpp in Sources */,
 				18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */,
 				18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */,
