@@ -36,7 +36,6 @@
 		18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B801E8182510CF00A5CD65 /* CAStreamBasicDescription.cpp */; };
 		18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EA182510CF00A5CD65 /* CAXException.cpp */; };
 		18B801FE182510CF00A5CD65 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801EE182510CF00A5CD65 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B801F1182510CF00A5CD65 /* TTTAttributedLabel.m */; };
 		18B802121825126900A5CD65 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802111825126900A5CD65 /* MobileCoreServices.framework */; };
 		18B802141825127500A5CD65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802131825127500A5CD65 /* SystemConfiguration.framework */; };
 		18B802161825127C00A5CD65 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B802151825127C00A5CD65 /* libz.1.2.5.dylib */; };
@@ -113,8 +112,6 @@
 		18B801EB182510CF00A5CD65 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
 		18B801ED182510CF00A5CD65 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		18B801EE182510CF00A5CD65 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		18B801F0182510CF00A5CD65 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
-		18B801F1182510CF00A5CD65 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		18B80205182510FD00A5CD65 /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
 		18B802111825126900A5CD65 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		18B802131825127500A5CD65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -257,7 +254,6 @@
 				18B801CD182510CF00A5CD65 /* ASIHTTPRequest */,
 				18B801E4182510CF00A5CD65 /* iPublicUtility */,
 				18B801EC182510CF00A5CD65 /* JSONKit-master */,
-				18B801EF182510CF00A5CD65 /* TTTAttributedLabel */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -323,16 +319,6 @@
 			);
 			name = "JSONKit-master";
 			path = "Libs/JSONKit-master";
-			sourceTree = "<group>";
-		};
-		18B801EF182510CF00A5CD65 /* TTTAttributedLabel */ = {
-			isa = PBXGroup;
-			children = (
-				18B801F0182510CF00A5CD65 /* TTTAttributedLabel.h */,
-				18B801F1182510CF00A5CD65 /* TTTAttributedLabel.m */,
-			);
-			name = TTTAttributedLabel;
-			path = Libs/TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		18B80200182510FD00A5CD65 /* BaiduVRLib */ = {
@@ -462,7 +448,6 @@
 				18B801FD182510CF00A5CD65 /* CAXException.cpp in Sources */,
 				18B801FB182510CF00A5CD65 /* CADebugMacros.cpp in Sources */,
 				18B801FC182510CF00A5CD65 /* CAStreamBasicDescription.cpp in Sources */,
-				18B801FF182510CF00A5CD65 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
