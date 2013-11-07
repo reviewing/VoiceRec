@@ -642,7 +642,7 @@
 				INFOPLIST_FILE = "HongVoiceRec/HongVoiceRec-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/duanhong/projects/git/duanhong169.github.com/VoiceRec/HongVoiceRec/Libs/BaiduVRLib,
+					"$(SRCROOT)/HongVoiceRec/Libs/BaiduVRLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -664,7 +664,7 @@
 				INFOPLIST_FILE = "HongVoiceRec/HongVoiceRec-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/duanhong/projects/git/duanhong169.github.com/VoiceRec/HongVoiceRec/Libs/BaiduVRLib,
+					"$(SRCROOT)/HongVoiceRec/Libs/BaiduVRLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
